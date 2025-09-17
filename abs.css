@@ -1,0 +1,4 @@
+
+    .about{margin-top:18px;line-height:1.6;color:#cfe1ff}
+    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .chip{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,0.03);font-weight:600;}

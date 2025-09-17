@@ -1,0 +1,14 @@
+    .education {
+      list-style: none;
+      padding: 0;
+    }
+    .education li {
+      margin: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    .education li::before {
+      content: "🎓";
+      position: absolute;
+      left: 0;
+    }

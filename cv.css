@@ -1,0 +1,15 @@
+ .cv-btn {
+      display: inline-block;
+      margin: 1rem 0;
+      padding: 0.6rem 1.2rem;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      color: white;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+    .cv-btn:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }

@@ -1,0 +1,16 @@
+
+    .scroll-reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+    .scroll-reveal.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Parallax effect for hero image */
+    .hero img {
+      transition: transform 0.3s ease;
+      will-change: transform;
+    }
