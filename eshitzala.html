@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eshit Zala — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Eshit Zala — Web Developer" />
+  <link href="abs.css" rel="stylesheet">
+  <link rel="stylesheet" href="body.css">
+  <link rel="stylesheet" href="proj.css">
+  <link rel="stylesheet" href="cont.css">
+  <link rel="stylesheet" href="scroll.css">
+  <link rel="stylesheet" href="cv.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="wrap">
+    <!-- Header -->
+    <header>
+      <div class="brand">
+        <div class="logo">EZ</div>
+        <div class="name">
+          <h1>Eshit Zala</h1>
+          <p>Web Designer & Developer</p>
+        </div>
+      </div>
+
+      <div class="menu-wrapper">
+        <button class="menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+        <div class="dropdown">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section>
+        <!-- Hero -->
+        <div class="card hero scroll-reveal">
+          <div class="avatar">
+            <img src="eshit.png.jpg" alt="Eshit Zala, Web Developer" loading="lazy">
+          </div>
+          <div class="intro">
+            <h2>Hi, I'm Eshit 👋</h2>
+            <p>Web Developer skilled in HTML, CSS, and creating user-friendly websites.</p>
+
+                   <!-- cv -->
+    <div id="Download CV" class=" scroll-reveal">
+         <a href="e.pdf" class="cv-btn" download>
+  <i class="fa-solid fa-file-arrow-down"></i> Download CV
+                </a>
+            </div>
+
+          <div class="socials">
+              <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="mailto:zalaeshit6@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- About -->
+        <div id="about" class="card about scroll-reveal">
+          <h3>About Me</h3>
+          <p>I am a Bachelor / Fresher & Web Designer / Developer With 1 year of experience. I love  to builds modern , uniques , responsive , and accessible websites with clean And As per your Responsive design of UI/UX principles.</p>
+        </div>
+
+        <!-- Skills -->
+        <div id="skills" class="card about scroll-reveal">
+          <h3>Skills</h3>
+          <div class="skills">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">Responsive Design</span>
+            <span class="chip">GIT</span>
+             <span class="chip">JS</span>
+             <span class="chip">C++</span>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div id="education" class="card about scroll-reveal">
+  <h3>Education</h3>
+  <ul class="education">
+    <li>
+      🎓 <strong>Bachelor of Computer Applications (BCA)-</strong><br>
+      Kadi Sarva Vishvavidyalaya (K.S.V), Gandhinagar <br>
+      <span class="muted">(2024 – 2027) • With 1 Year Experience</span>
+    </li>
+    <li>
+       🎓 <strong>Higher Secondary (GENERAL)-</strong><br>
+      Shree Tirupati High School, Junagadh/Mangrol <br>
+      <span class="muted">(2022 – 2024)</span>
+    </li>
+  </ul>
+</div>
+
+
+        <!-- Projects -->
+        <div id="projects" class="card projects scroll-reveal">
+          <h3>Projects</h3>
+          <div class="project">
+            <div class="thumb">🌐</div>
+            <div>
+              <a href="PROJECT.PNG"></a>
+              <h4>First Portfolio Website</h4>
+              <p>Responsive Personal portfolio built with HTML , CSS , GIT , JS.</p>
+            </div>
+          </div>
+          <div class="project">
+            <div class="thumb">💻</div>
+            <div>
+              <h4>Landing Page</h4>
+              <p>Modern landing page with gradient UI design</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+           <!-- Contact -->
+        <aside id="contact" class="panel scroll-reveal">
+        <div class="contact-card card">
+          <h3>Contact</h3>
+          <div class="meta">
+            <div><strong>Email:</strong> <span class="muted">zalaeshit6@gmail.com</span></div>
+            <div><strong>Location:</strong> <span class="muted">GUJARAT / INDIA</span></div>
+            <div><strong>Experience:</strong> <span class="muted">1 YEAR</span></div>
+          </div>
+
+         <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+  <input type="hidden" name="access_key" value="57515197-ae7d-4848-8f09-511c6b0e5a32">
+  <input type="text" name="name" aria-label="Your name" placeholder="Your name" required>
+  <input type="email" name="email" aria-label="Your email" placeholder="Your email" required>
+  <textarea name="message" aria-label="Message" placeholder="Message" required></textarea>
+  <button class="menu-btn" type="submit" style="background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white;border:none;">Send</button>
+</form>
+
+        </div>
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; <span id="year"></span> Designed and developed by Eshit Zala — Web Designer & Developer.
+Crafting clean, responsive, and user-friendly websites. Call Any Time. </p>
+    </footer>
+  </div>
+
+  <script>
+    // Year auto update
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // menu toggle
+    const menuBtn = document.querySelector(".menu-btn");
+    const menuWrapper = document.querySelector(".menu-wrapper");
+
+    menuBtn.addEventListener("click", () => {
+      menuWrapper.classList.toggle("open");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!menuWrapper.contains(e.target)) {
+        menuWrapper.classList.remove("open");
+      }
+    });
+
+    // scroll reveal
+    const revealElements = document.querySelectorAll('.scroll-reveal');
+    function handleScroll() {
+      const triggerBottom = window.innerHeight * 0.85;
+      revealElements.forEach(el => {
+        const boxTop = el.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          el.classList.add('show');
+        } else {
+          el.classList.remove('show');
+        }
+      });
+    }
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    // parallax hero image
+    window.addEventListener("scroll", () => {
+      const heroImg = document.querySelector(".hero img");
+      if(heroImg){
+        let offset = window.scrollY * 0.1;
+        heroImg.style.transform = `translateY(${offset}px)`;
+      }
+    });
+  </script>
+</body>
+</html>
